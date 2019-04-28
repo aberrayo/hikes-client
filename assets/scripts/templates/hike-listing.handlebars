@@ -2,37 +2,26 @@
   {{log hike}}
   <section data-id="{{hikes.id}}">
 
-    <p>
-      {{#if hike.location}}
-        {{hike.location}}
-      {{else}}
-        No location provided.
-      {{/if}}
-    </p>
-    <p>
-      {{#if hike.trail_name}}
-        {{hike.trail_name}}
-      {{else}}
-        No location provided.
-      {{/if}}
-    </p>
-    <p>
-      {{#if hike.distance_miles}}
-        {{hike.distance_miles}}
-      {{else}}
-        No location provided.
-      {{/if}}
-    </p>
-    <p>
-      {{#if hike.date}}
-        {{hike.date}}
-      {{else}}
-        No location provided.
-      {{/if}}
-    </p>
+      <span><h4>Location: {{hike.location}}</h4></span>
+       <br>
+        <span>Trail_name: {{hike.trail_name}}</span>
+        <br>
+        <span>Distance_miles: {{hike.distance_miles}} miles</span>
+         <br>
+        <span>Date: {{hike.date}}</span>
+        <br>
+    <form class="edit-hike-form" data-id="{{hike.id}}">
+        <!-- <div class="edit-friend-message"></div> -->
+        <input type="text" class="form-control-sm" name="location" placeholder="location">
+        <input type="text" class="form-control-sm" name="trail_name" placeholder="Trail Name">
+        <input type="number" class="form-control-sm" name="distance_miles" placeholder="Distance">
+        <input type="date" class="form-control-sm" name="date" placeholder="Date">
+        <input type="submit" class="btn btn-primary btn-sm edit-hike-button" value="Update">
+    </form>
+
      {{> partial}}
 
-     <button data-id="{{hike.id}}" class="btn btn-danger delete">Remove</button>
+     <button data-id="{{hike.id}}" class="btn btn-danger btn-sm delete">Remove</button>
 
     </section>
 

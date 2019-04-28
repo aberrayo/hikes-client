@@ -16,36 +16,21 @@ const getHike = function (id) {
     method: 'GET'
   })
 }
-const createHikes = function (data) {
+const createHikes = function (hikeData) {
   return $.ajax({
     url: config.apiUrl + '/hikes',
     method: 'POST',
     headers: {Authorization: 'Token token=' + store.user.token},
-    data: {
-      'hikes': {
-        'location': data.hikes.location,
-        'trail_name': data.hikes.trail_name,
-        'distance_miles': data.hikes.distance_miles,
-        'date': data.hikes.date
-      }
-    }
+    data: hikeData
   })
 }
 
-const updateHike = function (id) {
+const updateHike = function (updateData) {
   return $.ajax({
-    url: config.apiUrl + `/hikes/${id}`,
+    url: config.apiUrl + `/hikes/${store.id}`,
     method: 'PATCH',
     headers: {Authorization: 'Token token=' + store.user.token},
-    data: {
-      'hikes': {
-        'location': 'location',
-        'trail_name': 'trail_name',
-        'distance_miles': 'distance_miles',
-        'date': 'date'
-      }
-    }
-
+    data: updateData
   })
 }
 const deleteHike = function (id) {

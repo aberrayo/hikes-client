@@ -3,6 +3,7 @@
 const api = require('./api.js')
 const ui = require('./ui.js')
 const getFormFields = require('./../../../lib/get-form-fields')
+const store = require('../store.js')
 
 const onGetHikes = (event) => {
   event.preventDefault()
@@ -12,7 +13,6 @@ const onGetHikes = (event) => {
 }
 const onCreateHikes = function (event) {
   event.preventDefault()
-
   const data = getFormFields(event.target)
   api.createHikes(data)
   console.log('Hike Created')
@@ -26,9 +26,10 @@ const onGetHike = (event) => {
 
 const onUpdateHikes = function (event) {
   event.preventDefault()
-  const id = $(event.target).data('id')
-  api.updateHikes(id)
-  console.log('Nation Updated')
+  const data = getFormFields(event.target)
+  store.id = $(event.target).data('id')
+  api.updateHike(data)
+  console.log('Hikes Updated')
 }
 
 const onDeleteHikes = (event) => {
@@ -49,6 +50,8 @@ const addHandlers = () => {
   $('#getHikesButton').on('click', onGetHikes)
   $('#clearHikesButton').on('click', onClearHikes)
   $('#content').on('click', '.delete', onDeleteHikes)
+  $('#content').on('submit', onUpdateHikes)
+  $('#createHikesForm').on('submit', onCreateHikes)
 }
 
 module.exports = {
