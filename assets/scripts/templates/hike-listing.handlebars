@@ -1,8 +1,8 @@
 {{#each hikes as |hike|}}
   {{log hike}}
   <section data-id="{{hikes.id}}">
-
-      <span><h4>Location: {{hike.location}}</h4></span>
+      <div class="CrudAlerts"></div>
+      <span><h4><stront>Location:</stront> {{hike.location}}</h4></span>
        <br>
         <span>Trail_name: {{hike.trail_name}}</span>
         <br>
@@ -11,12 +11,11 @@
         <span>Date: {{hike.date}}</span>
         <br>
     <form class="edit-hike-form" data-id="{{hike.id}}">
-
         <input type="text" class="form-control-sm" name="hike[location]" placeholder="location">
         <input type="text" class="form-control-sm" name="hike[trail_name]" placeholder="Trail Name">
         <input type="number" class="form-control-sm" name="hike[distance_miles]" placeholder="Distance">
         <input type="date" class="form-control-sm" name="hike[date]" placeholder="Date">
-        <input type="submit" class="btn btn-primary btn-sm edit-hike-button" value="Update">
+        <input type="submit"  class="btn btn-primary btn-sm edit-hike-button" value="Update">
     </form>
 
      {{> partial}}

@@ -12,18 +12,20 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
+      <div class="sign-out-container">
+          <form id="sign-out">
+              <input type="submit" class="btn btn-info" value="Sign Out">
+          </form>
+      </div>
       <h1>The Outdoors</h1>
 
       <nav class="NavContent">
         <div class="app-name">Explore</div>
         <div class="nav-buttons">
           <button id="getHikesButton" class="btn btn-info mr-2">Get Hikes!</button>
-          <button id="getHikeButton" class="btn btn-outline-info">Get Hike!</button>
-          <button id="updateHikesButton" class="btn btn-outline-info">Updat Hikes!</button>
           <button id="clearHikesButton" class="btn btn-outline-info">Clear Hikes!</button>
-          <button id="createHikeButton" class="btn btn-outline-info">Create Hike!</button>
-        </div>
-      </nav>
+          </div>
+        </nav>
       <main class="MainContent">
         <div id="content" class="content"></div>
       </main>
@@ -47,16 +49,12 @@
   </div>
 </div>
 
+  <div Class="response"></div>
 
-  <div class="sign-out-container">
-      <form id="sign-out">
-          <input type="submit" class="btn btn-info" value="Sign Out">
-      </form>
-  </div>
-  <div id="response"></div>
-      <section class="CreateContent">
-              <form id="createHikesForm">
+      <section class="CreateContent center_section">
+          <form id="createHikesForm">
           <h2> Log Your Trails</h2>
+          <div class="CrudAlerts" ></div>
           <div class="form-row">
             <div class="form-group col-md-3">
               <label for="inputDate3"> Location </label>
@@ -86,7 +84,6 @@
         </form>
         <br>
         <br>
-        <div id="workout-log" class="workout-log"></div>
       </section>
 
     </body>
