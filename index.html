@@ -14,7 +14,7 @@
     <body>
       <h1>The Outdoors</h1>
 
-      <nav>
+      <nav class="NavContent">
         <div class="app-name">Explore</div>
         <div class="nav-buttons">
           <button id="getHikesButton" class="btn btn-info mr-2">Get Hikes!</button>
@@ -24,7 +24,7 @@
           <button id="createHikeButton" class="btn btn-outline-info">Create Hike!</button>
         </div>
       </nav>
-      <main>
+      <main class="MainContent">
         <div id="content" class="content"></div>
       </main>
       <div class="authen-container">
@@ -54,29 +54,31 @@
       </form>
   </div>
   <div id="response"></div>
-      <section>
+      <section class="CreateContent">
               <form id="createHikesForm">
           <h2> Log Your Trails</h2>
           <div class="form-row">
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-3">
               <label for="inputDate3"> Location </label>
               <input required type="text" class="form-control form-control-sm" name="hike[location]">
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-2">
+            <div class="form-group col-md-3">
               <label for="inputNum3"> Trail_Name </label>
               <input type="text" min="1" class="form-control form-control-sm" name="hike[trail_name]">
             </div>
-            <div class="form-group col-md-2">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
               <label for="inputNum3"> Distance_Miles</label>
               <input type="number" min="1" class="form-control form-control-sm" name="hike[distance_miles]">
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-10">
+            <div class="form-group col-md-3">
               <label for="inputNum3"> Date </label>
-              <input type="date" class="form-control form-control-sm" name="hike[date]">
+              <input type="date" min="1" class="form-control form-control-sm" name="hike[date]">
             </div>
           </div>
 

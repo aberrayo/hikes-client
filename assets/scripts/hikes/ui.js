@@ -12,17 +12,22 @@ const getCreateSuccess = (data) => {
   $('.content').html(showHikesHtml)
   console.log(data)
 }
-
+const getUpdateSuccess = (data) => {
+  const showHikesHtml = showHikesTemplate({ hikes: data.hikes })
+  $('.content').html(showHikesHtml)
+  console.log(data)
+}
 const clearHikes = () => {
   $('.content').empty()
 }
 
-/*const failure = (error) => {
-}*/
+/* const failure = (error) => {
+} */
 
 module.exports = {
   getHikesSuccess,
   getCreateSuccess,
+  getUpdateSuccess,
   clearHikes
-  //failure
+  // failure
 }

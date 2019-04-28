@@ -25,12 +25,12 @@ const createHikes = function (hikeData) {
   })
 }
 
-const updateHike = function (updateData) {
+const updateHike = function (data) {
   return $.ajax({
     url: config.apiUrl + `/hikes/${store.id}`,
     method: 'PATCH',
     headers: {Authorization: 'Token token=' + store.user.token},
-    data: updateData
+    data: data
   })
 }
 const deleteHike = function (id) {
