@@ -25,11 +25,9 @@ const getUpdateSuccess = (data) => {
   setTimeout(function () {
     $('.CrudAlerts').text('')
   }, 3000)
-  $('form').on('submit', function () {
-    $('form').find('input:text').empty();
   $('.CrudAlerts').html('Successfully Updated')
   $('form').trigger('reset')
-})
+}
 
 const getDeleteSuccess = (data) => {
   setTimeout(function () {
