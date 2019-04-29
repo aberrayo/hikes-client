@@ -34,7 +34,6 @@ const onUpdateHikes = function (event) {
   api.updateHike(data)
     .then(ui.getUpdateSuccess)
     .then(() => onGetHikes(event))
-  $('.CrudAlerts').text('')
     .catch(ui.failure)
   console.log('Hikes Updated')
 }
