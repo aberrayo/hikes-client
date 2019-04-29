@@ -8,7 +8,6 @@ const getHikesSuccess = (data) => {
   setTimeout(function () {
     $('.CrudAlerts').text('')
   }, 3000)
-  $('.CrudAlerts').text('Successfully Recieved')
 }
 
 const getCreateSuccess = (data) => {
@@ -33,12 +32,10 @@ const getUpdateSuccess = (data) => {
 
 const getDeleteSuccess = (data) => {
   setTimeout(function () {
-    $('.CrudAlerts').text('')
     $('form').trigger('reset')
     $('.CreateAlert').text('')
   }, 3000)
   $('.CreateAlert').text('Successfully Deleted')
-  $('.CrudAlerts').text('Successfully Deleted')
 }
 const clearHikes = () => {
   $('.content').empty()

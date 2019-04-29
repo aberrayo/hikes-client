@@ -16,6 +16,7 @@ const onCreateHikes = function (event) {
   const data = getFormFields(event.target)
   api.createHikes(data)
     .then(ui.getCreateSuccess)
+    .then(() => onGetHikes(event))
     .catch(ui.failure)
   console.log('Hike Created')
 }
@@ -32,6 +33,8 @@ const onUpdateHikes = function (event) {
   store.id = $(event.target).data('id')
   api.updateHike(data)
     .then(ui.getUpdateSuccess)
+    .then(() => onGetHikes(event))
+  $('.CrudAlerts').text('')
     .catch(ui.failure)
   console.log('Hikes Updated')
 }
