@@ -15,6 +15,8 @@ const onCreateHikes = function (event) {
   event.preventDefault()
   const data = getFormFields(event.target)
   api.createHikes(data)
+    .then(ui.getCreateSuccess)
+    .catch(ui.failure)
   console.log('Hike Created')
 }
 const onGetHike = (event) => {
@@ -29,6 +31,8 @@ const onUpdateHikes = function (event) {
   const data = getFormFields(event.target)
   store.id = $(event.target).data('id')
   api.updateHike(data)
+    .then(ui.getUpdateSuccess)
+    .catch(ui.failure)
   console.log('Hikes Updated')
 }
 
@@ -37,6 +41,7 @@ const onDeleteHikes = (event) => {
   const id = $(event.target).data('id')
   console.log(event)
   api.deleteHike(id)
+    .then(ui.getDeleteSuccess)
     .then(() => onGetHikes(event))
     .catch(ui.failure)
 }

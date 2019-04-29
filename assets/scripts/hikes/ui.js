@@ -8,32 +8,37 @@ const getHikesSuccess = (data) => {
   setTimeout(function () {
     $('.CrudAlerts').text('')
   }, 3000)
-  $('.CrudAlerts').text('Successfull')
+  $('.CrudAlerts').text('Successfully Recieved')
 }
+
 const getCreateSuccess = (data) => {
   const showHikesHtml = showHikesTemplate({ hikes: data.hikes })
   $('.content').html(showHikesHtml)
   setTimeout(function () {
-    $('.CrudAlerts').text('')
+    $('.CreateAlert').text('')
+    $('form').trigger('reset')
   }, 3000)
-  $('.CrudAlerts').text('Successfully Created')
-  $('.CreateContent').trigger('reset')
+  $('.CreateAlert').text('Successfully Created')
 }
+
 const getUpdateSuccess = (data) => {
   const showHikesHtml = showHikesTemplate({ hikes: data.hikes })
   $('.content').html(showHikesHtml)
   setTimeout(function () {
-    $('.CrudAlerts').text('')
+    $('.CreateAlert').text('')
+    $('form').trigger('reset')
   }, 3000)
-  $('.CrudAlerts').html('Successfully Updated')
-  $('form').trigger('reset')
+  $('.CreateAlert').text('Successfully Updated')
 }
 
 const getDeleteSuccess = (data) => {
   setTimeout(function () {
     $('.CrudAlerts').text('')
-  }, 500)
-  $('.CrudAlerts').html('Successfully Deleted')
+    $('form').trigger('reset')
+    $('.CreateAlert').text('')
+  }, 3000)
+  $('.CreateAlert').text('Successfully Deleted')
+  $('.CrudAlerts').text('Successfully Deleted')
 }
 const clearHikes = () => {
   $('.content').empty()
