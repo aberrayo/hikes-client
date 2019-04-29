@@ -71,8 +71,8 @@ const signOutSuccess = function (data) {
   $('.response').text('Successful SignOut!')
   $('.NavContent').fadeOut()
   $('#change-password').fadeOut(2000)
-  $('.container').hide()
   $('.CreateContent').fadeOut(2000)
+  $('.CreateContent').hide()
   $('.MainContent').fadeOut(2000)
   store.user = null
   $('form').trigger('reset')
