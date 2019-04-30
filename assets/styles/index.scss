@@ -16,6 +16,10 @@
     color: #dc3545;
     font-size: 30px;
 }
+.NavContent {
+  display: none;
+  color: $blue;
+}
 
 .update {
   color: #dc3545;
@@ -32,12 +36,14 @@
 }
 
 .CreateContent {
+  display: none;
   font-size: 20px;
   margin: auto;
   padding: 10px 30px;
   text-align: left;
 }
 .sign-out-container {
+  display: none;
   font-size: 20px;
   padding: 10px 30px;
   text-align: right;
@@ -92,7 +98,6 @@ main {
     &:empty {
       &::before {
         color: lighten($info, 25%);
-        content: 'Display Your Hikes';
         font-size: 3vh;
         line-height: .85;
         text-align: center;
