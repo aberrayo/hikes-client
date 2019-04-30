@@ -6,13 +6,15 @@ const store = require('./../store.js')
 const getHikes = function () {
   return $.ajax({
     method: 'GET',
-    url: config.apiUrl + '/hikes'
+    url: config.apiUrl + '/hikes',
+    headers: {Authorization: 'Token token=' + store.user.token}
   })
 }
 
 const getHike = function (id) {
   return $.ajax({
     url: config.apiUrl + `/hikes/${id}`,
+    headers: {Authorization: 'Token token=' + store.user.token},
     method: 'GET'
   })
 }
