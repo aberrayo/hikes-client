@@ -2,13 +2,13 @@
   {{log hike}}
   <section data-id="{{hikes.id}}">
       <div class="CrudAlerts"></div>
-      <span><h4><strong>Location:</strong> {{hike.location}}</h4></span>
+      <span><h4><strong>Location:</strong>   {{hike.location}}</h4></span>
        <br>
-        <span>Trail_name: {{hike.trail_name}}</span>
+        <span><strong>Trail_name:</strong>   {{hike.trail_name}}</span>
         <br>
-        <span>Distance_miles: {{hike.distance_miles}} miles</span>
+        <span><strong>Distance_miles:</strong>   {{hike.distance_miles}} miles</span>
          <br>
-        <span>Date: {{hike.date}}</span>
+        <span><strong>Date:</strong>  {{hike.date}}</span>
         <br>
     <form class="edit-hike-form" data-id="{{hike.id}}">
         <input type="text" class="form-control-sm" name="hike[location]" placeholder="location">

@@ -35,7 +35,6 @@ const onUpdateHikes = function (event) {
     .then(ui.getUpdateSuccess)
     .then(() => onGetHikes(event))
     .catch(ui.failure)
-  console.log('Hikes Updated')
 }
 
 const onDeleteHikes = (event) => {
