@@ -15,7 +15,7 @@ Technologies Used
 1. RUBY/RAILS
 1. JQUERY
 
-# Short Comings
+## Short Comings
 
 At the back end, i would have liked to make the app comprehensively functional
 with all the basic neccessitie a hiker needs from a moden app. That would mean
@@ -26,7 +26,7 @@ Also in the front end, more work can be done. From styling the app better to
 adding some javascript functionality to the stored data and giving the user more
 feedback.
 
-# Lessons Learned
+## Lessons Learned
 
 I have learned several lessons during this project. From understanding how data
 is structured and saved at the back end and how it communicates to the front end
@@ -35,7 +35,7 @@ Personally. I have gotten better at ways to approch problems and the efficient
 way to go about solving those problems. That includes asking the right
 questions and searching online resourses and understanding what i see.
 
-# User Stories
+## User Stories
 
 1. As a user i want to be able to sign up, sign in, and sign out
 1. As a user i want my credentials secure
@@ -47,18 +47,18 @@ questions and searching online resourses and understanding what i see.
 1. As a user i want to be able to edit a my trail data i have saved
 1. As a user i want to be able to see all the hikes i have completed
 
-# Link to deployed front end application (Hikes-Client)
+## Link to deployed front end application (Hikes-Client)
 
 https://aberrayo.github.io/hikes-client/
 
-# Link to deployed back end application (Hikes-Api)
+## Link to deployed back end application (Hikes-Api)
 
 https://explore-hiking.herokuapp.com/
 
-# GitGub link for the deployed api
+## GitGub link for the deployed api
 
 https://github.com/aberrayo/Hikes-api
 
-# Wire Frame Link
+## Wire Frame Link
 
 https://imgur.com/i2fXxrH
