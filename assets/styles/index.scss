@@ -35,6 +35,17 @@
   font-size: 40px;
 }
 
+#change-password {
+  font-size: 25px;
+  display: none;
+  padding: 20px 50px;
+  text-align: center;
+}
+.changeAlert {
+  color: #dc3545;
+  font-size: 30px;
+}
+
 .CreateContent {
   display: none;
   font-size: 20px;
