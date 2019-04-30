@@ -5,7 +5,7 @@ they completed. A hikers would have a personal authentication page where thier
 saved files can be seen by other people who use the app but protected from any
 edit or deleate action.
 
-Technologies Used
+## Technologies Used
 
 1. HTML
 1. BOOTSTRAP
