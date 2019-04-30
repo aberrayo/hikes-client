@@ -28,6 +28,13 @@ feedback.
 
 Lessons Learned
 
+I have learned several lessons during this project. From understanding how data
+is structured and saved at the back end and how it communicates to the front end
+and how the whole fullstock application architecture works.
+Personally. I have gotten better at ways to approch problems and the efficient
+way to go about solving those problems. That includes asking the right
+questions and searching online resourses and understanding what i see.
+
 User Stories
 
 . As a user i want to be able to sign up, sign in, and sign out
@@ -39,4 +46,19 @@ User Stories
 . As a user I wnat to be able to delete a data i saved
 . As a user i want to be able to edit a my trail data i have saved
 . As a user i want to be able to see all the hikes i have completed
- 
+
+Link to deployed front end application (Hikes-Client)
+
+https://aberrayo.github.io/hikes-client/
+
+Link to deployed back end application (Hikes-Api)
+
+https://explore-hiking.herokuapp.com/
+
+GitGub link for the deployed api
+
+https://github.com/aberrayo/Hikes-api
+
+Wire Frame Link
+
+https://imgur.com/i2fXxrH
