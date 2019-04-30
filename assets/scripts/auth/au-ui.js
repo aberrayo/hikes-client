@@ -27,6 +27,7 @@ const signInSuccess = function (data) {
   store.user = data.user
   $('#change-password').fadeIn(5000)
   $('#sign-out').fadeIn(4000)
+  $('.sign-out-container').show()
   $('.NavContent').fadeIn(4000)
   $('.MainContent').fadeIn(4000)
   $('.CreateContent').fadeIn(4000)
@@ -66,6 +67,7 @@ const signOutSuccess = function (data) {
     $('.response').text('')
   }, 3000)
   $('#sign-up').fadeIn(5000)
+  $('.sign-out-container').hide()
   $('#sign-out').fadeOut(2000)
   $('.authen-container').fadeIn(5000)
   $('.response').text('Successful SignOut!')
