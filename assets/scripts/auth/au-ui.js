@@ -77,7 +77,7 @@ const signOutSuccess = function (data) {
   $('.CreateContent').hide()
   $('.NavContent').hide()
   $('.MainContent').fadeOut(2000)
-  $('.MainContent').empty()
+  $('.content').empty()
   store.user = null
   $('form').trigger('reset')
 }
