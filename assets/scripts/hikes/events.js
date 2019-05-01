@@ -18,7 +18,6 @@ const onCreateHikes = function (event) {
     .then(ui.getCreateSuccess)
     .then(() => onGetHikes(event))
     .catch(ui.failure)
-  console.log('Hike Created')
 }
 const onGetHike = (event) => {
   event.preventDefault()
@@ -40,7 +39,6 @@ const onUpdateHikes = function (event) {
 const onDeleteHikes = (event) => {
   event.preventDefault()
   const id = $(event.target).data('id')
-  console.log(event)
   api.deleteHike(id)
     .then(ui.getDeleteSuccess)
     .then(() => onGetHikes(event))
