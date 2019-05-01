@@ -11,10 +11,10 @@
         <span><strong>Date:</strong>  {{hike.date}}</span>
         <br>
     <form class="edit-hike-form" data-id="{{hike.id}}">
-        <input type="text" class="form-control-sm" name="hike[location]" placeholder="location">
-        <input type="text" class="form-control-sm" name="hike[trail_name]" placeholder="Trail Name">
-        <input type="number" class="form-control-sm" name="hike[distance_miles]" placeholder="Distance">
-        <input type="date" class="form-control-sm" name="hike[date]" placeholder="Date">
+        <input type="text" class="form-control-sm" name="hike[location]" placeholder="location" required>
+        <input type="text" class="form-control-sm" name="hike[trail_name]" placeholder="Trail Name" required>
+        <input type="number" class="form-control-sm" name="hike[distance_miles]" placeholder="Distance"  required>
+        <input type="date" class="form-control-sm" name="hike[date]" placeholder="Date" required>
         <input type="submit"  class="btn btn-primary btn-sm edit-hike-button" value="Update">
     </form>
 
