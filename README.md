@@ -59,7 +59,7 @@ https://github.com/aberrayo/hikes-client
 
 https://explore-hiking.herokuapp.com/
 
-## GitHub link for the deployed api
+## GitHub link for the back end repositary
 
 https://github.com/aberrayo/Hikes-api
 
