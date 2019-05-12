@@ -6,11 +6,14 @@
   text-align: center;
 }
 
-.CrudAlerts {
+.CreateUpdate {
   color: #dc3545;
-  font-size: 30px;
-  text-align: center;
+  font-size: 40px;
 }
+.CreateAlert {
+  color: #dc3545;
+  font-size: 40px;
+  }
 
 .response {
     color: #dc3545;
@@ -29,10 +32,6 @@
   font-size: 20px;
   padding: 10px 30px;
   text-align: center;
-}
-.CreateAlert {
-  color: #dc3545;
-  font-size: 40px;
 }
 
 #change-password {

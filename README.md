@@ -51,11 +51,15 @@ questions and searching online resourses and understanding what i see.
 
 https://aberrayo.github.io/hikes-client/
 
+## GitHub link to front end repositary
+
+https://github.com/aberrayo/hikes-client
+
 ## Link to deployed back end application (Hikes-Api)
 
 https://explore-hiking.herokuapp.com/
 
-## GitGub link for the deployed api
+## GitHub link for the deployed api
 
 https://github.com/aberrayo/Hikes-api
 
